@@ -12,5 +12,5 @@ ENV CRDA_KEY=''
 ENV HOST=''
 ENV CONSENT_TELEMETRY='false'
 
-COPY scripts/crda.sh /
+COPY scripts/maven/crda.sh /
 RUN chmod +x /crda.sh
