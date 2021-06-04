@@ -33,6 +33,15 @@ jobs:
             target: crda-python
             tag: 3.8
             path: Dockerfiles/Dockerfile.python
+          - ecosystem: golang
+            target: crda-golang
+            path: Dockerfiles/Dockerfile.golang
+          - ecosystem: npm
+            target: crda-npm
+            path: Dockerfiles/Dockerfile.npm
+          - ecosystem: maven
+            target: crda-maven
+            path: Dockerfiles/Dockerfile.maven
     steps:
     - uses: actions/checkout@v2
     - name: Set up QEMU
